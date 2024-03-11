@@ -1,1 +1,107 @@
-/* You can add global styles to this file, and also import other style files */
+$body-bg: #acc4d836;
+$card-bg: white;
+$dropdown-bg: white;
+$list-group-bg: white;
+$list-group-active-bg: #acc4d8;
+$list-group-active-border-color: #acc4d8;
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0;
+    width: 240px;
+    z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.sidebar .active {
+    border-radius: 5px;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+}
+
+#mobile-nav i{
+    font-size: 2rem;
+}
+
+/* Media queries */
+
+//Extra small
+@media (max-width: 576px) { 
+    header{
+        display:none;
+    }
+    #mobile-nav{
+        display:flex;
+    }
+    main {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+}
+
+//Small
+@media (min-width: 576px) { 
+    header{
+        display:block;
+    }
+    #mobile-nav{
+        display:none ;
+    }
+    main {
+        padding-left: 0px;
+        padding-top: 80px;
+    }
+}
+
+//Medium
+@media (min-width: 768px) { 
+    main {
+        padding-left: 0px;
+    }
+}
+
+//Large
+@media (min-width: 992px) { 
+    main {
+        padding-left: 240px;
+    }
+}
+
+//Extra large
+@media (min-width: 1200px) { 
+    main {
+        padding-left: 240px;
+    }
+}
+
+//Extra extra large
+@media (min-width: 1400px) { 
+    main {
+        padding-left: 240px;
+    }
+}
+
+// rood b8282f
+// roos e58a8e
+// donker blauw 243a4c
+// blauw acc4d8
+
+/* finally, import Bootstrap */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
