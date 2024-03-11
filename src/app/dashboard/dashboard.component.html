@@ -5,34 +5,33 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12">
-      <div class="card">
-        <div class="card-body">
-          <p class="card-title">Therapietrouw grafiek</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 pt-2">
+    <div class="col-12 pt-2">
       <div class="card">
         <div class="card-body">
           <p class="card-title">Lichaamsgewicht</p>
-          <!-- <canvas
+          <canvas
               baseChart
-              width="400"
-              height="400"
               [type]="'line'"
-              [data]="lineChartData"
-              [options]="lineChartOptions"
-              [legend]="lineChartLegend"
+              [data]="weightData"
+              [options]="weightOptions"
+              [legend]="false"
             >
-            </canvas> -->
+            </canvas>
         </div>
       </div>
     </div>
-    <div class="col-lg-6 pt-2">
+    <div class="col-12 pt-2">
       <div class="card">
         <div class="card-body">
           <p class="card-title">Bloeddruk</p>
+          <canvas
+              baseChart
+              [type]="'line'"
+              [data]="bloodPressureData"
+              [options]="bloodPressureOptions"
+              [legend]="true"
+            >
+            </canvas>
         </div>
       </div>
     </div>

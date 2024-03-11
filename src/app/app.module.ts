@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
+import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2-charts';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DailyTasksComponent } from './daily-tasks/daily-tasks.component';
 import { SettingsComponent } from './settings/settings.component';
@@ -19,7 +19,8 @@ import { SettingsComponent } from './settings/settings.component';
   imports: [
     BrowserModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BaseChartDirective
   ],
   providers: [provideCharts(withDefaultRegisterables())],
   bootstrap: [AppComponent]
