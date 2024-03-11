@@ -9,6 +9,12 @@ $list-group-active-bg: #acc4d8;
 $list-group-active-border-color: #acc4d8;
 
 
+
+/* Navbar fix */
+.navbar-nav .dropdown-menu {
+    position: absolute !important;
+}
+
 /* Sidebar */
 .sidebar {
     position: fixed;
