@@ -9,8 +9,7 @@ $list-group-active-bg: #acc4d8;
 $list-group-active-border-color: #acc4d8;
 
 
-
-/* Navbar fix */
+/* Navbar */
 .navbar-nav .dropdown-menu {
     position: absolute !important;
 }
@@ -43,14 +42,36 @@ $list-group-active-border-color: #acc4d8;
     padding-top: 0.5rem;
     overflow-x: hidden;
     overflow-y: auto;
-    /* Scrollable contents if viewport is shorter than content. */
 }
+
+/* Mobile navbar */
 
 #mobile-nav i{
     font-size: 1.5rem;
 }
 
-/* Media queries */
+/* Cards */
+
+div.card.bg-success,div.card.bg-warning,div.card.bg-danger
+{
+    background-color: #fff !important;
+}
+div.card.bg-success .card-body {
+    border-left-style: solid;
+    border-left-color: var(--bs-success);
+}
+div.card.bg-warning .card-body {
+    border-left-style: solid;
+    border-left-color: var(--bs-warning);
+}
+div.card.bg-danger .card-body {
+    border-left-style: solid;
+    border-left-color: var(--bs-danger);
+}
+
+/* ------------------------------------------------------------------ */
+/* Media queries                                                      */
+/* ------------------------------------------------------------------ */
 
 //Extra small
 @media (max-width: 576px) { 
@@ -108,10 +129,12 @@ $list-group-active-border-color: #acc4d8;
     }
 }
 
+/* finally, import Bootstrap */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
 // rood b8282f
 // roos e58a8e
 // donker blauw 243a4c
 // blauw acc4d8
-
-/* finally, import Bootstrap */
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
