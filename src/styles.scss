@@ -44,6 +44,11 @@ $list-group-active-border-color: #acc4d8;
     overflow-y: auto;
 }
 
+#navbarUserLink
+{
+    font-size: 1.3rem;
+}
+
 /* Mobile navbar */
 
 #mobile-nav i{
@@ -97,7 +102,7 @@ div.card.bg-danger .card-body {
     }
     main {
         padding-left: 0px;
-        padding-top: 80px;
+        padding-top: 120px;
     }
 }
 

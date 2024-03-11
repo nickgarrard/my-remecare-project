@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DailyTasksComponent } from './daily-tasks/daily-tasks.component';
 import { SettingsComponent } from './settings/settings.component';
+import { PersonDataComponent } from './person-data/person-data.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'daily-tasks', pathMatch: 'full'},
   { path: 'dashboard', component: DashboardComponent },
   { path: 'daily-tasks', component: DailyTasksComponent },
   { path: 'settings', component: SettingsComponent },
+  { path: 'person-data', component: PersonDataComponent },
 ];
 
 @NgModule({

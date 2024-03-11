@@ -8,13 +8,15 @@ import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DailyTasksComponent } from './daily-tasks/daily-tasks.component';
 import { SettingsComponent } from './settings/settings.component';
+import { PersonDataComponent } from './person-data/person-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     DailyTasksComponent,
-    SettingsComponent
+    SettingsComponent,
+    PersonDataComponent
   ],
   imports: [
     BrowserModule,
