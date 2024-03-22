@@ -9,6 +9,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DailyTasksComponent } from './daily-tasks/daily-tasks.component';
 import { SettingsComponent } from './settings/settings.component';
 import { PersonDataComponent } from './person-data/person-data.component';
+import { AboutComponent } from './about/about.component';
+import { ChangeProfileComponent } from './change-profile/change-profile.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { PersonDataComponent } from './person-data/person-data.component';
     DashboardComponent,
     DailyTasksComponent,
     SettingsComponent,
-    PersonDataComponent
+    PersonDataComponent,
+    AboutComponent,
+    ChangeProfileComponent
   ],
   imports: [
     BrowserModule,
