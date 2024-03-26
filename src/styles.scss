@@ -1,4 +1,7 @@
-$body-bg: #acc4d836;
+$body-bg: #f8f9fa;
+
+$primary: #b8282f;
+
 $card-bg: white;
 $dropdown-bg: white;
 
@@ -7,6 +10,8 @@ $navbar-toggler-focus-width: 0.0rem;
 $list-group-bg: white;
 $list-group-active-bg: #acc4d8;
 $list-group-active-border-color: #acc4d8;
+
+
 
 
 /* Navbar */
@@ -72,6 +77,13 @@ div.card.bg-warning .card-body {
 div.card.bg-danger .card-body {
     border-left-style: solid;
     border-left-color: var(--bs-danger);
+}
+
+/* Form controls */
+
+.form-control:disabled,.form-select:disabled {
+    background-color: #f8f9fa !important;
+    opacity: 1;
 }
 
 /* ------------------------------------------------------------------ */
