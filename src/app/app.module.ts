@@ -11,6 +11,9 @@ import { SettingsComponent } from './settings/settings.component';
 import { PersonDataComponent } from './person-data/person-data.component';
 import { AboutComponent } from './about/about.component';
 import { ChangeProfileComponent } from './change-profile/change-profile.component';
+import { CareTeamComponent } from './care-team/care-team.component';
+import { MyDataComponent } from './my-data/my-data.component';
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ChangeProfileComponent } from './change-profile/change-profile.componen
     SettingsComponent,
     PersonDataComponent,
     AboutComponent,
-    ChangeProfileComponent
+    ChangeProfileComponent,
+    CareTeamComponent,
+    MyDataComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,

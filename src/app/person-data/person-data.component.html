@@ -9,51 +9,51 @@
       <div class="card">
         <div class="card-body">
           <div class="mb-2 row">
-            <label for="familyName" class="col-sm-2 col-form-label"
-              >Family name</label
-            >
+            <label for="id" class="col-sm-2 col-form-label">Id</label>
             <div class="col-sm-10">
-              <input
-                type="input"
-                disabled
-                class="form-control"
-                id="familyName"
-                value="Garrard"
-              />
+              <input type="text" disabled class="form-control-plaintext" id="id" value="1" />
             </div>
           </div>
           <div class="mb-2 row">
-            <label for="givenName" class="col-sm-2 col-form-label"
-              >Given name</label
-            >
+            <label for="ssin" class="col-sm-2 col-form-label">SSIN</label>
             <div class="col-sm-10">
-              <input
-                type="input"
-                disabled
-                class="form-control"
-                id="givenName"
-                value="Nick"
-              />
+              <input type="input" disabled class="form-control" id="ssin" value="123456" />
             </div>
           </div>
           <div class="mb-2 row">
-            <label for="birthDate" class="col-sm-2 col-form-label"
-              >Date of birth</label
-            >
+            <label for="familyName" class="col-sm-2 col-form-label">Family name</label>
             <div class="col-sm-10">
-              <input
-                type="date"
-                disabled
-                class="form-control"
-                id="birthDate"
-                value="1975-09-04"
-              />
+              <input type="input" disabled class="form-control" id="familyName" value="Garrard" />
             </div>
           </div>
           <div class="mb-2 row">
-            <label for="language" class="col-sm-2 col-form-label"
-              >Language</label
-            >
+            <label for="givenName" class="col-sm-2 col-form-label">Given name</label>
+            <div class="col-sm-10">
+              <input type="input" disabled class="form-control" id="givenName" value="Nick" />
+            </div>
+          </div>
+          <div class="mb-2 row">
+            <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+            <div class="col-sm-10">
+              <select disabled class="form-select" id="gender">
+                <option value="1" selected>Male</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-2 row">
+            <label for="birthDate" class="col-sm-2 col-form-label">Date of birth</label>
+            <div class="col-sm-10">
+              <input type="date" disabled class="form-control" id="birthDate" value="1975-09-04" />
+            </div>
+          </div>
+          <div class="mb-2 row">
+            <label for="birthPlace" class="col-sm-2 col-form-label">Place of birth</label>
+            <div class="col-sm-10">
+              <input type="input" disabled class="form-control" id="birthPlace" value="Antwerp" />
+            </div>
+          </div>
+          <div class="mb-2 row">
+            <label for="language" class="col-sm-2 col-form-label">Language</label>
             <div class="col-sm-10">
               <select disabled class="form-select" id="language">
                 <option value="1" selected>Dutch</option>
@@ -61,58 +61,42 @@
             </div>
           </div>
           <div class="mb-2 row">
-            <label for="nationality" class="col-sm-2 col-form-label"
-              >Nationality</label
-            >
+            <label for="communicationLanguage" class="col-sm-2 col-form-label">Communication language</label>
+            <div class="col-sm-10">
+              <select disabled class="form-select" id="communicationLanguage">
+                <option value="1" selected>Dutch</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-2 row">
+            <label for="nationality" class="col-sm-2 col-form-label">Nationality</label>
             <div class="col-sm-10">
               <select disabled class="form-select" id="nationality">
                 <option value="1" selected>Belgian</option>
               </select>
             </div>
           </div>
+          <!-- Loop over contactpoints -->
           <div class="mb-2 row">
-            <div class="col-sm-12">
-            <table class="table caption-top">
-              <caption>
-                Contact points
-              </caption>
-              <thead>
-                <tr>
-                  <th>System</th>
-                  <th>Value</th>
-                  <th>Use</th>
-                  <th>Start</th>
-                  <th>End</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+            <label for="phone" class="col-sm-2 col-form-label">Phone (work)</label>
+            <div class="col-sm-10">
+              <input type="text" disabled class="form-control" id="phone" value="123456789" />
+            </div>
           </div>
+          <div class="mb-2 row">
+            <label for="email" class="col-sm-2 col-form-label">Phone (work)</label>
+            <div class="col-sm-10">
+              <input type="email" disabled class="form-control" id="email" value="nick.garrard@remecare.eu" />
+            </div>
           </div>
-
-          <button type="button" class="btn btn-primary float-end">Edit</button>
+          <div class="mb-2 row">
+            <label for="website" class="col-sm-2 col-form-label">Website (work)</label>
+            <div class="col-sm-10">
+              <input type="text" disabled class="form-control" id="website" value="www.remecare.eu" />
+            </div>
+          </div>
+          <!-- -------------------- -->
+          <button type="button" disabled class="btn btn-primary float-end">Edit</button>
         </div>
       </div>
     </div>

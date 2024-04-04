@@ -3,6 +3,7 @@ $body-bg: #f8f9fa;
 $primary: #b8282f;
 
 $card-bg: white;
+$card-cap-bg: white;
 $dropdown-bg: white;
 
 $navbar-toggler-focus-width: 0.0rem;
@@ -10,6 +11,8 @@ $navbar-toggler-focus-width: 0.0rem;
 $list-group-bg: white;
 $list-group-active-bg: #acc4d8;
 $list-group-active-border-color: #acc4d8;
+
+$table-bg: white;
 
 
 
@@ -61,6 +64,9 @@ $list-group-active-border-color: #acc4d8;
 }
 
 /* Cards */
+.card:hover{
+    cursor: pointer;
+}
 
 div.card.bg-success,div.card.bg-warning,div.card.bg-danger
 {
@@ -84,6 +90,12 @@ div.card.bg-danger .card-body {
 .form-control:disabled,.form-select:disabled {
     background-color: #f8f9fa !important;
     opacity: 1;
+}
+
+i.bi-info-circle-fill
+{
+    color: #243a4c;
+    cursor: pointer;
 }
 
 /* ------------------------------------------------------------------ */
