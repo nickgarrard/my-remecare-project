@@ -5,15 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2-charts';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { DailyTasksComponent } from './daily-tasks/daily-tasks.component';
-import { SettingsComponent } from './settings/settings.component';
-import { PersonDataComponent } from './person-data/person-data.component';
-import { AboutComponent } from './about/about.component';
-import { ChangeProfileComponent } from './change-profile/change-profile.component';
-import { CareTeamComponent } from './care-team/care-team.component';
-import { MyDataComponent } from './my-data/my-data.component';
-import { TaskComponent } from './task/task.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DailyTasksComponent } from './components/daily-tasks/daily-tasks.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { PersonDataComponent } from './components/person-data/person-data.component';
+import { AboutComponent } from './components/about/about.component';
+import { ChangeProfileComponent } from './components/change-profile/change-profile.component';
+import { CareTeamComponent } from './components/care-team/care-team.component';
+import { MyDataComponent } from './components/my-data/my-data.component';
+import { TaskComponent } from './components/task/task.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { TaskComponent } from './task/task.component';
     BrowserModule,
     NgbModule,
     AppRoutingModule,
-    BaseChartDirective
+    BaseChartDirective,
   ],
   providers: [provideCharts(withDefaultRegisterables())],
   bootstrap: [AppComponent]

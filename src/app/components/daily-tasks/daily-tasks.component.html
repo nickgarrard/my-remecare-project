@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     <div class="col-12">
-    <!--   <p class="centered-divider"><span>Yesterday's tasks</span></p>
+      <!--   <p class="centered-divider"><span>Yesterday's tasks</span></p>
       <div class="card bg-success mt-2">
         <div class="card-body">
           <span
@@ -26,56 +26,58 @@
         </div>
       </div>
       <p class="centered-divider mt-2"><span>Today's tasks</span></p> -->
-      <div class="card bg-success mt-1">
+
+      <!-- <div class="card bg-success mt-1">
         <div class="card-body">
-          <span
-            ><b>08:00</b
-            ><span class="badge bg-success float-end">Completed</span
-            ><br />Grooming task</span
-          >
+          <span><b>08:00</b><span class="badge bg-success float-end">Completed</span><br />Grooming task</span>
           <a routerLink="/task" class="stretched-link"></a>
         </div>
       </div>
       <div class="card bg-warning mt-1">
         <div class="card-body">
-          <span
-            ><b>09:00</b><span class="badge bg-warning float-end">Overdue</span
-            ><br />Body temperature</span
-          >
+          <span><b>09:00</b><span class="badge bg-warning float-end">Overdue</span><br />Body temperature</span>
           <a routerLink="/task" class="stretched-link"></a>
         </div>
       </div>
       <div class="card bg-danger mt-1">
         <div class="card-body">
-          <span
-            ><b>10:00</b><span class="badge bg-danger float-end">Urgent</span
-            ><br />Body weight<span class="text-danger float-end"
-              ><i class="bi bi-arrow-right"></i></span
-          ></span>
+          <span><b>10:00</b><span class="badge bg-danger float-end">Urgent</span><br />Body weight<span
+              class="text-danger float-end"><i class="bi bi-arrow-right"></i></span></span>
           <a routerLink="/task" class="stretched-link"></a>
         </div>
       </div>
       <div class="card mt-1">
         <div class="card-body">
-          <span><b>11:00</b><br />Fresubin 1800 complete - 1500ml</span
-          ><span class="float-end"><i class="bi bi-arrow-right"></i></span>
+          <span><b>11:00</b><br />Fresubin 1800 complete - 1500ml</span><span class="float-end"><i
+              class="bi bi-arrow-right"></i></span>
           <a routerLink="/task" class="stretched-link"></a>
         </div>
       </div>
       <div class="card mt-1">
         <div class="card-body">
-          <span><b>18:00</b><br />Body temperature</span
-          ><span class="float-end"><i class="bi bi-arrow-right"></i></span>
+          <span><b>18:00</b><br />Body temperature</span><span class="float-end"><i
+              class="bi bi-arrow-right"></i></span>
           <a routerLink="/task" class="stretched-link"></a>
         </div>
       </div>
       <div class="card mt-1">
         <div class="card-body">
-          <span><b>19:00</b><br />Body weight</span
-          ><span class="float-end"><i class="bi bi-arrow-right"></i></span>
+          <span><b>19:00</b><br />Body weight</span><span class="float-end"><i class="bi bi-arrow-right"></i></span>
           <a routerLink="/task" class="stretched-link"></a>
         </div>
+      </div> -->
+      
+      @for (task of tasks; track task) {
+      <div class="card mt-1">
+        <div class="card-body">
+          <span><b>{{task.restriction!.period!.start | date:'hh:mm' }}</b><span
+              class="badge {{task.status}} float-end">{{task.status}}</span><br />{{task.description}}</span><span
+            class="float-end"><i class="bi bi-arrow-right"></i></span>
+          <a routerLink="/task/{{task.id}}" class="stretched-link"></a>
+        </div>
       </div>
+      }
+
       <!-- <p class="centered-divider mt-2"><span>Tomorrow's tasks</span></p>
       <div class="card mt-1">
         <div class="card-body">
